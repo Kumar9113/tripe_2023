@@ -1,0 +1,225 @@
+:root{
+
+  
+  
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);  
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%); 
+    --greyText: hsl(190, 190, 190);
+    --inputColor:hsl(330,12%,97%);
+    
+  }
+  
+    .Popular
+    {
+       padding-top: 16rem;
+    }
+    .setHeader
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .setHeader .textDiv
+    {
+        color: var(--blackColor);
+        line-height: 1.5rem;
+        padding-bottom: .5rem;
+    }
+    .setHeader .textDiv p
+    {
+        font-size: 13px;
+        color: var(--textColor);
+        font-weight: 500;
+    }
+    .iconsDiv
+    {
+        gap: .5rem;
+    }
+    .iconsDiv .icon
+    {
+        font-size: 2rem;
+        padding: .5rem;
+        color:black;
+        background:gray ;
+        border-radius: 50%; 
+    }
+    .iconsDiv .icon:hover
+    {
+        background:var(--blackColor);
+        color:var(--whiteColor);
+        border-radius: 50%;  
+    }
+    .mainContent
+    {
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    .singleDestination
+    {
+        overflow: hidden;
+        border-radius:1rem;
+        box-shadow: 0 2px 8px 2px rgba(178,178,178,0.034);
+    }
+    .destImage
+    {
+        height: 200px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .destImage img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overlayInfo
+    {
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        /* padding: 1rem 1.5rem; */
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(rgba(0,0,0,0.856),rgba(0,0,0,0.759));
+        top:0;
+        width: 100%;
+        height: 0;
+        /* height: 100%; */
+        overflow: hidden;
+    }
+    .overlayInfo h3
+    {
+        color: var(--whiteColor);
+        font-weight: 600;
+    }
+    .overlayInfo p
+    {
+        color: var(--whiteColor);
+        opacity: .7;
+        font-size: 13px;
+    }
+    .overlayInfo .icon
+    {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background: var(--PrimaryColor);
+        font-size: 2.5rem;
+        border-radius: 50%;
+        color: var(--whiteColor);
+        border: 1px solid var(--PrimaryColor);
+        transition: .3s ease;
+    }
+    .overlayInfo .icon:hover
+    {
+        background:var(--blackColor) ;
+        border: 1px solid var(--PrimaryColor);
+        color: var(--PrimaryColor);
+    }
+    
+    .destFooter
+    {
+        padding:1rem ;
+    }
+    .Number
+    {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--blackColor);
+        position: relative;
+        width: max-content;
+    }
+    .Number::after
+    {
+        content:'';
+        position: absolute;
+        background: var(--PrimaryColor);
+        top: 45%;
+        right:-150% ;
+        height: 5px;
+        width: 45px;
+        
+    }
+    .destText
+    {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .destText h6
+    {
+        color: var(--blackColor);
+        font-size: 15px;
+    }
+    .destText .flex
+    {
+        font-size: 16px;
+        font-weight: 600;
+        align-items: flex-start;
+        transform: translateY(5px);
+
+    }
+    .destText .icon
+    {
+        color: var(--PrimaryColor);
+
+    }
+    .singleDestination:hover .overlayInfo
+    {
+        overflow: visible;
+        padding: 1rem 1.5rem;
+        height: 100%;
+    }
+
+    @media screen and (min-width:480px)
+    {
+        .Popular
+        {
+            padding-top:10rem ;
+        }
+        .setHeader
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 70%;
+            margin: auto;
+
+            justify-content:space-between;
+            gap: 1rem;
+        }
+    }
+    @media screen and (min-width:556px) {
+        .mainContent
+        {
+          display: grid;
+          grid-template-columns:repeat(2,1fr);
+        }
+      
+        
+       
+        
+       }
+       @media screen and (min-width:884px) {
+        .mainContent
+        {
+            display: grid;
+          grid-template-columns: repeat(3,1fr);
+          padding:2rem  6rem;
+          
+
+        }
+        
+        
+       
+        
+       }

@@ -1,0 +1,132 @@
+:root{
+
+  
+  
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);  
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%); 
+    --greyText: hsl(190, 190, 190);
+    --inputColor:hsl(330,12%,97%);
+  }
+
+    .home
+    {
+      height: 70vh;
+      background: url('https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    .homeText
+  {
+    text-align: center;
+
+  }
+  .title
+  {
+    color: var(--whiteColor);
+    font-size: 2rem;
+    font-weight: 700px;
+    line-height: 2.5rem;
+  }
+  .subTitle
+  {
+    color: var(--whiteColor);
+    opacity: .9;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+  .homeText .btn
+  {
+    padding:.6rem 1.5rem;
+  }
+    .homeCard
+  { display: flex;
+    flex-direction: column;
+    width:70%;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: white;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
+  }
+  .homeCard button
+  {
+    width: 80%;
+    padding: 15px 0;
+    margin:auto;
+  }
+  .locationDiv, .priceDiv, .destDiv
+  {
+    margin: 10px;
+    width: 100%;
+    text-align: start;
+  }
+  label
+  {
+    display: block;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  input
+  {
+    height: 1.2rem;
+    padding: 20px;
+    border: none;
+    width: 70%;
+  }
+  .homeCard button
+  {
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+  }
+  @media screen and (min-width:480px) {
+    .home .homeCard
+    {
+      display: grid;
+     
+      height: 250px;
+      width: 90%;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .home .homeCard .btn
+    {
+      transform: translateY(15px);
+    }
+   
+  }
+  @media screen and (min-width:480px) {
+   .homeText .title
+   {
+    font-size: 2.5rem;
+   }
+   .subTitle
+   {
+    font-size: 18px;
+
+   }
+   
+  }
+  
+
+
+    
+  
+  

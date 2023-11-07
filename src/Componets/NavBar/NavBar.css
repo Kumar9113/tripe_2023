@@ -1,0 +1,216 @@
+:root{
+
+  
+  
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);  
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%); 
+    --greyText: hsl(190, 190, 190);
+    --inputColor:hsl(330,12%,97%);
+  }
+  .closeNavbar
+  {
+    display: none;
+  }
+  .toggleNavBar
+  {
+    display: none;
+  }
+  .navBarSection .header
+  {
+     position: fixed;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: transparent;
+     width: 100%;
+     padding: 1rem;
+     z-index: 1000; 
+  }
+  .header.activeHeader
+  {
+    background: var(--textColor);
+    box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45);
+    
+    opacity: 0.9;
+  }
+
+  .navBarSection .header .logoDiv .logo
+  {
+    color: var(--whiteColor);
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBarSection .header .logoDiv .icon{
+    color: var(--PrimaryColor);
+    font-size: 35px;
+    padding-right: 10px;
+  }
+  .navBar
+  {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    
+  }
+  .navBar .navItem
+  {
+    margin-left: 2rem;
+  }
+  .navBar button
+  {
+    margin-left: 2rem;
+  }
+  .navBar .navItem a
+  {
+    color: var(--whiteColor);
+  }
+  .navBar .navItem a:hover
+  {
+    color:var(--PrimaryColor);
+  }
+
+  .closeNavbar
+  {
+    position: absolute;
+    top:1rem;
+    right: 1.5rem;
+    color:var(--PrimaryColor);
+  }
+  .closeNavbar .icon:hover
+  {
+    color: var(--PrimaryColor);
+
+  }
+  .loginBtn
+  {
+    background:none;
+    border: 1px solid var(--PrimaryColor);
+  }
+  .loginBtn a
+  {
+    color: var(--PrimaryColor);
+  }
+  .loginBtn:hover
+  {
+    background:var(--HoverColor);
+    
+  }
+  .loginBtn a:hover
+  {
+    color: var(--whiteColor);
+  }
+  @media screen and (max-width:769px) {
+    .closeNavbar
+  {
+    display:block;
+  }
+  .toggleNavBar
+  {
+    display:block;
+    
+  }
+  .toggleNavBar .icon
+  {
+    color:white;
+  }
+  .toggleNavBar .icon:hover
+  {
+    color:var(--PrimaryColor)
+  }
+    .navBar
+    {
+         background:var(--greyBg);
+         position: absolute;
+         padding: 1rem;
+         width: 100%;
+         top:0;
+         left:-500%;
+         transition: 2s ease;
+         z-index: 1000;
+
+         box-shadow: 0 2px 4px  rgba(209, 209, 209, alpha);
+        }
+        .navBar.activeNavbar
+        {
+          left: 0;
+
+        }
+        .navLists
+        {
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          margin: auto;
+          
+        }
+        .navItem
+        {
+          padding: 1rem 0;
+          
+        }
+        .navLink 
+        {
+          color: var(--PrimaryColor);
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        .navLink:hover
+        {
+          color: var(--blackColor);
+
+        }
+        .headerBtns
+        {
+          flex-direction: column;
+
+        }
+        .navBar .navItem a:hover
+  {
+    color: var(--blackColor)
+  }
+  .navBar .navItem a
+  {
+    color:var(--PrimaryColor);
+  }
+        .btn
+        {
+          margin-top: 1rem;
+        }
+        .btn a
+        {
+          font-weight: 600;
+        }
+        .btn a:hover
+        {
+          color:var(--whiteColor);
+        }
+        .loginBtn
+        {
+          background:none;
+          border: 1px solid var(--PrimaryColor);
+        }
+        .loginBtn a
+        {
+          color: var(--PrimaryColor);
+        }
+        .loginBtn:hover
+        {
+          background:var(--HoverColor);
+          
+        }
+        .loginBtn a:hover
+        {
+          color: var(--whiteColor);
+        }
+        
+
+      
+    
+  }

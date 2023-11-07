@@ -1,0 +1,125 @@
+:root{
+
+  
+  
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48%);  
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyBg: hsl(0, 0%, 96%); 
+    --greyText: hsl(190, 190, 190);
+    --inputColor:hsl(330,12%,97%);
+}
+.cardContent
+{
+    gap:2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.about .seeContainer .title
+{
+    color: var(--blackColor);
+    line-height: 1.5rem;
+    padding-bottom: .2rem;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.seeContainer .mainContent 
+{
+    gap: 1rem;
+
+}
+.seeContainer .mainContent .singleItem
+{
+    text-align: center;
+}
+.seeContainer .mainContent .singleItem img
+{
+    background: rgba(247,144,54,0.265);
+    width: 100px;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.seeContainer .mainContent .singleItem h3{
+    color: var(--blackColor);
+    font-weight: 700;
+    padding: .5rem;
+}
+.seeContainer .mainContent .singleItem p{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 2rem;
+    padding-bottom: .5rem;
+    color: var(--textColor);
+}
+.videoCard
+{
+    margin:2rem;
+    
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    background:linear-gradient( to top, rgba(0,0,0,0.73),rgba(0,0,0,0.609)),url(https://images.pexels.com/photos/2889492/pexels-photo-2889492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.cardText h2
+{
+    padding-top: 1rem;
+    color: var(--whiteColor);
+    font-weight: 600;
+   padding-bottom:1rem;
+}
+.cardText p
+{
+    color:var(--whiteColor);
+    opacity: 7;
+    font-size:12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0rem 0 1rem 0;
+
+}
+.cardVideo
+{
+    border: 2px solid var(--whiteColor);
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    
+
+}
+.cardVideo video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (min-width:884px) {
+    .cardContent
+    {
+        gap:2rem;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    .videoCard
+{
+    margin:0 10rem;
+   height: 250px;
+   align-items: center;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    background:linear-gradient( to top, rgba(0,0,0,0.73),rgba(0,0,0,0.609)),url(https://images.pexels.com/photos/2889492/pexels-photo-2889492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+}
